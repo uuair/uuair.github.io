@@ -20,7 +20,7 @@
 <h4 id="开启搜索功能"><a href="#开启搜索功能" class="headerlink" title="开启搜索功能"></a>开启搜索功能</h4><blockquote>
 <p>参考：<a href="https://github.com/next-theme/hexo-generator-searchdb">https://github.com/next-theme/hexo-generator-searchdb</a>  </p>
 </blockquote>
-<p><code>https://github.com/next-theme/hexo-generator-searchdb</code>  </p>
+<p><code>$ npm install hexo-generator-searchdb</code>  </p>
 <p>根目录*_config.yml*文件增加如下:  </p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  content: true</span><br><span class="line">  format: html</span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">修改theme/next目录下的 *_config.yml*: </span><br></pre></td></tr></table></figure>
 <h1 id="Local-Search"><a href="#Local-Search" class="headerlink" title="Local Search"></a>Local Search</h1><h1 id="Dependencies-https-github-com-next-theme-hexo-generator-searchdb"><a href="#Dependencies-https-github-com-next-theme-hexo-generator-searchdb" class="headerlink" title="Dependencies: https://github.com/next-theme/hexo-generator-searchdb"></a>Dependencies: <a href="https://github.com/next-theme/hexo-generator-searchdb">https://github.com/next-theme/hexo-generator-searchdb</a></h1><p>local_search:</p>
