@@ -19,25 +19,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"uuair.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="不会cod的coder">
-<meta property="og:type" content="website">
-<meta property="og:title" content="374qie">
-<meta property="og:url" content="https://uuair.github.io/index.html">
+    <meta name="description" content="GitHub设置 已经有了账号，本地也有sshkey，所以需要把id_rsa.pub文件的内容复制到账号–setting–”SSH and GPG keys”下面  验证是否成功的方式：ssh -T git@github.com    进入github.com的网站，选择Repositories旁边的 New，输入uuair.github.io作为Repository name,下面选择 Add">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo部署github">
+<meta property="og:url" content="https://uuair.github.io/2024/02/17/hexo%E9%83%A8%E7%BD%B2github/index.html">
 <meta property="og:site_name" content="374qie">
-<meta property="og:description" content="不会cod的coder">
+<meta property="og:description" content="GitHub设置 已经有了账号，本地也有sshkey，所以需要把id_rsa.pub文件的内容复制到账号–setting–”SSH and GPG keys”下面  验证是否成功的方式：ssh -T git@github.com    进入github.com的网站，选择Repositories旁边的 New，输入uuair.github.io作为Repository name,下面选择 Add">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-02-17T05:41:05.000Z">
+<meta property="article:modified_time" content="2024-02-17T06:32:51.984Z">
 <meta property="article:author" content="Leon">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="github">
+<meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://uuair.github.io/">
+<link rel="canonical" href="https://uuair.github.io/2024/02/17/hexo%E9%83%A8%E7%BD%B2github/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://uuair.github.io/2024/02/17/hexo%E9%83%A8%E7%BD%B2github/","path":"2024/02/17/hexo部署github/","title":"hexo部署github"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>374qie</title>
+<title>hexo部署github | 374qie</title>
   
 
 
@@ -70,7 +75,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">374qie</h1>
+      <p class="site-title">374qie</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -96,7 +101,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -109,6 +114,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">GitHub设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">本地设置</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -148,106 +154,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://uuair.github.io/2024/02/17/hexo%E4%B8%BB%E9%A2%98next/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Leon">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="374qie">
-      <meta itemprop="description" content="不会cod的coder">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 374qie">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/02/17/hexo%E4%B8%BB%E9%A2%98next/" class="post-title-link" itemprop="url">hexo主题next</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-02-17 14:31:27 / 修改时间：14:34:49" itemprop="dateCreated datePublished" datetime="2024-02-17T14:31:27+08:00">2024-02-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/network/" itemprop="url" rel="index"><span itemprop="name">network</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code>  </p>
-<h4 id="修改主题为Gemini"><a href="#修改主题为Gemini" class="headerlink" title="修改主题为Gemini"></a>修改主题为Gemini</h4><p><code>scheme: Gemini</code>  </p>
-<h4 id="menu菜单"><a href="#menu菜单" class="headerlink" title="menu菜单"></a>menu菜单</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  #home: / || fa fa-home</span><br><span class="line">  #about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  #archives: /archives/ || fa fa-archive</span><br><span class="line">  #schedule: /schedule/ || fa fa-calendar</span><br><span class="line">  #sitemap: /sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: /404/ || fa fa-heartbeat</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">menu_settings:</span><br><span class="line">  icons: true //是否显示图标  </span><br><span class="line">  badges: true //是否显示各分类数量</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/02/17/hexo%E4%B8%BB%E9%A2%98next/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://uuair.github.io/2024/02/17/hexo%E9%83%A8%E7%BD%B2github/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -261,13 +178,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 374qie">
+      <meta itemprop="name" content="hexo部署github | 374qie">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/02/17/hexo%E9%83%A8%E7%BD%B2github/" class="post-title-link" itemprop="url">hexo部署github</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          hexo部署github
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -299,8 +216,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="GitHub设置"><a href="#GitHub设置" class="headerlink" title="GitHub设置"></a>GitHub设置</h3><ol>
+    <div class="post-body" itemprop="articleBody"><h3 id="GitHub设置"><a href="#GitHub设置" class="headerlink" title="GitHub设置"></a>GitHub设置</h3><ol>
 <li><p>已经有了账号，本地也有sshkey，所以需要把id_rsa.pub文件的内容复制到账号–setting–”SSH and GPG keys”下面</p>
 </li>
 <li><p>验证是否成功的方式：<code>ssh -T git@github.com</code>  </p>
@@ -314,15 +230,36 @@
 <li><p>同时上面的<em>GitHub Pages</em>这里会显示访问的地址:<code>https://uuair.github.io</code></p>
 </li>
 </ol>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/02/17/hexo%E9%83%A8%E7%BD%B2github/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+<span id="more"></span>
+
+<h3 id="本地设置"><a href="#本地设置" class="headerlink" title="本地设置"></a>本地设置</h3><ol>
+<li>下载nodejs</li>
+<li>安装hexo： <code>npm install hexo-cli -g</code>  </li>
+<li>设置好本地目录：比如我的<em>blog</em>  </li>
+<li><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
+<li>hexo命令：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean // 清空</span><br><span class="line">hexo g     // g=generate 生成静态目录</span><br><span class="line">hexo d     // d=deploy 发布</span><br><span class="line">hexo s     // s=server 本地调试，浏览器localhost:4000</span><br><span class="line">hexo new test //发一篇文章</span><br></pre></td></tr></table></figure></li>
+<li>网站设置在文件 <em>_config.yml</em>中，下面是配置说明：  <ul>
+<li>title :网站标题</li>
+<li>subtitle: 副标题</li>
+<li>description: 网站描述  </li>
+<li>author: 作者名字  </li>
+<li>language: zn-CN 网站语言<br><em>每一个冒号后面跟一个英文的空格</em></li>
+</ul>
+<ol start="7">
+<li>配置主题：<br><code>git clone https://github.com/cjquines/hexo-theme-ascent themes/ascent</code>  </li>
+<li>修改 <em>_config.yml</em>的 <em>Deployment</em>部分：  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line"> type: &#x27;git&#x27;</span><br><span class="line"> repo: git@github.com:uuair/uuair.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><em>repo</em>的部分在github的 <em>Code</em>下面的 <strong>SSH</strong>中复制</li>
+<li><em>branch</em>必须跟settings中 <em>GitHub Pages</em> 指定的<strong>Branch</strong>一样</li>
+</ul>
+<ol start="9">
+<li>修改 <em>themes</em> 部分：<code> theme: ascent</code>  </li>
+<li>文章发布在 <em>source&#x2F;_posts</em>中存为<strong>md</strong>格式</li>
+</ol>
+</li>
+</ol>
+
     </div>
 
     
@@ -330,11 +267,27 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/github/" rel="tag"># github</a>
+              <a href="/tags/blog/" rel="tag"># blog</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/02/17/hexo%E4%B8%BB%E9%A2%98next/" rel="next" title="hexo主题next">
+                  hexo主题next <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
 </div>
+
 
 
 
