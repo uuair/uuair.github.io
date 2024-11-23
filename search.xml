@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2024-11-22.md</title>
-    <url>/2024-undefined-22/2024-11-22.html</url>
-    <content><![CDATA[<h1 id="这是标题"><a href="#这是标题" class="headerlink" title="这是标题"></a>这是标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2>]]></content>
+    <title>下载资源</title>
+    <url>/2024-11-23-download.html</url>
+    <content><![CDATA[<p>这是最好的下载资源，地址：</p>
+]]></content>
       <categories>
-        <category>diary</category>
+        <category>resource</category>
       </categories>
   </entry>
   <entry>
     <title>极简生活.md</title>
-    <url>/2024-undefined-23/yibenhaoshu.html</url>
+    <url>/2024-11-23-yibenhaoshu.html</url>
     <content><![CDATA[<p>读一本好书，就好比跟一个特别和善的人做朋友，在一个美好的午后喝着茶，聊着天，听他诉说着他的过往。</p>
 ]]></content>
       <categories>
@@ -18,8 +19,16 @@
       </categories>
   </entry>
   <entry>
+    <title>2024-11-22.md</title>
+    <url>/2024-11-22-2024-11-22.html</url>
+    <content><![CDATA[<h1 id="这是标题"><a href="#这是标题" class="headerlink" title="这是标题"></a>这是标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2>]]></content>
+      <categories>
+        <category>diary</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Joplin Publish自动发布文章</title>
-    <url>/2024-undefined-20/Joplin-Publish-fa-bu-wen-zhang.html</url>
+    <url>/2024-11-20-Joplin-Publish-fa-bu-wen-zhang.html</url>
     <content><![CDATA[<h3 id="第一步：安装Joplin-Publish插件"><a href="#第一步：安装Joplin-Publish插件" class="headerlink" title="第一步：安装Joplin Publish插件"></a>第一步：安装Joplin Publish插件</h3><p>下载地址：<a href="https://github.com/rxliuli/joplin-utils/releases">https://github.com/rxliuli/joplin-utils/releases</a>  </p>
 <h3 id="第二部：修改仓库"><a href="#第二部：修改仓库" class="headerlink" title="第二部：修改仓库"></a>第二部：修改仓库</h3><ol>
 <li>打开仓库后，在 <strong>Setting</strong> 中选择左侧 <strong>Pages</strong> ，将 <strong>Build and deployment</strong> 修改为 <code>Github actions</code></li>
@@ -45,7 +54,7 @@
   </entry>
   <entry>
     <title>github+hexo</title>
-    <url>/2024-undefined-17/github+hexo.html</url>
+    <url>/2024-02-17-github+hexo.html</url>
     <content><![CDATA[<h3 id="GitHub设置"><a href="#GitHub设置" class="headerlink" title="GitHub设置"></a>GitHub设置</h3><ol>
 <li><p>已经有了账号，本地也有sshkey，所以需要把id_rsa.pub文件的内容复制到账号–setting–”SSH and GPG keys”下面  </p>
 </li>
@@ -132,7 +141,7 @@
   </entry>
   <entry>
     <title>hexo安装next主题</title>
-    <url>/2024-undefined-17/hexo-an-zhuang-zhu-ti-next.html</url>
+    <url>/2024-02-17-hexo-an-zhuang-zhu-ti-next.html</url>
     <content><![CDATA[<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><code>git clone https://github.com/next-theme/hexo-theme-next themes/next</code>  </p>
 <h4 id="修改主题为Gemini"><a href="#修改主题为Gemini" class="headerlink" title="修改主题为Gemini"></a>修改主题为Gemini</h4><p><code>scheme: Gemini</code>  </p>
 <h4 id="menu菜单"><a href="#menu菜单" class="headerlink" title="menu菜单"></a>menu菜单</h4><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span></span><br><span class="line">  <span class="comment">#about: /about/ || fa fa-user</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-th</span></span><br><span class="line">  <span class="comment">#archives: /archives/ || fa fa-archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure>
@@ -179,7 +188,7 @@ local_search:
   </entry>
   <entry>
     <title>vscode+hexo</title>
-    <url>/2024-undefined-21/vscode-hexo.html</url>
+    <url>/2024-11-21-vscode-hexo.html</url>
     <content><![CDATA[<p>当我确定了用md格式记录笔记，并且使用hexo发布的时候，我开始着手准备我的工具。这十几年我一直使用印象笔记在同步我的信息，用wordpress搭建博客，但印象笔记的笔记好像无法连同格式复制到wordpress当中，并且随着印象笔记的没落，似乎官方也在2023年以后不在更新它的各种媒体信息，而我的会员虽然还有很久才到期，现在却也开始准备保存到本地了。<em>目前还没有找到好的导出方案</em>  </p>
 <p>笔记软件我选择了obsidian，可不管说的多神气，对于我这种刚开始准备写几个字的人来说，不需要那么多功能，在之前修改笔记的时候，恰巧我用vscode打开，同时安装了<code>Markdown All in One</code>这个插件后，这不也挺好的么，在反复用hexo发布笔记并且调整格式的时候，安装了<code>markdownlint</code>用来调整markdown的格式，一次性就把格式弄好了，那我为什么还要在多安装一个软件呢？看来vscode就够了。仅以此笔记，记录一下用vscode写hexo的方法。  </p>
 <span id="more"></span>
@@ -275,14 +284,5 @@ local_search:
         <tag>hexo</tag>
         <tag>vscode</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>下载资源</title>
-    <url>/2024-undefined-23/download.html</url>
-    <content><![CDATA[<p>这是最好的下载资源，地址：</p>
-]]></content>
-      <categories>
-        <category>resource</category>
-      </categories>
   </entry>
 </search>

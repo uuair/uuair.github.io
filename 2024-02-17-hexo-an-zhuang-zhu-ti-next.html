@@ -21,30 +21,31 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"it.leon.vc","root":"/","images":"/images","scheme":"Gemini","darkmode":"ture","version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="GitHub设置 已经有了账号，本地也有sshkey，所以需要把id_rsa.pub文件的内容复制到账号–setting–”SSH and GPG keys”下面    验证是否成功的方式：ssh -T git@github.com  进入github.com的网站，选择Repositories旁边的 New，输入name.github.io作为Repository name,下面选择 Add a">
+    <meta name="description" content="安装git clone https:&#x2F;&#x2F;github.com&#x2F;next-theme&#x2F;hexo-theme-next themes&#x2F;next   修改主题为Geminischeme: Gemini   menu菜单123456789menu:  home: &#x2F; || fa fa-home  #about: &#x2F;about&#x2F; || fa fa-user  tags: &#x2F;tags&#x2F; || fa fa-ta">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github+hexo">
-<meta property="og:url" content="https://it.leon.vc/2024-undefined-17/github+hexo.html">
+<meta property="og:title" content="hexo安装next主题">
+<meta property="og:url" content="https://it.leon.vc/2024-02-17-hexo-an-zhuang-zhu-ti-next.html">
 <meta property="og:site_name" content="LeonVC">
-<meta property="og:description" content="GitHub设置 已经有了账号，本地也有sshkey，所以需要把id_rsa.pub文件的内容复制到账号–setting–”SSH and GPG keys”下面    验证是否成功的方式：ssh -T git@github.com  进入github.com的网站，选择Repositories旁边的 New，输入name.github.io作为Repository name,下面选择 Add a">
+<meta property="og:description" content="安装git clone https:&#x2F;&#x2F;github.com&#x2F;next-theme&#x2F;hexo-theme-next themes&#x2F;next   修改主题为Geminischeme: Gemini   menu菜单123456789menu:  home: &#x2F; || fa fa-home  #about: &#x2F;about&#x2F; || fa fa-user  tags: &#x2F;tags&#x2F; || fa fa-ta">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-02-17T05:41:05.000Z">
-<meta property="article:modified_time" content="2024-11-23T03:39:30.697Z">
+<meta property="article:published_time" content="2024-02-17T06:31:27.000Z">
+<meta property="article:modified_time" content="2024-11-23T03:31:09.279Z">
 <meta property="article:author" content="Leon">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="github">
 <meta property="article:tag" content="blog">
+<meta property="article:tag" content="theme">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://it.leon.vc/2024-undefined-17/github+hexo.html">
+<link rel="canonical" href="https://it.leon.vc/2024-02-17-hexo-an-zhuang-zhu-ti-next.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://it.leon.vc/2024-undefined-17/github+hexo.html","path":"2024-undefined-17/github+hexo.html","title":"github+hexo"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://it.leon.vc/2024-02-17-hexo-an-zhuang-zhu-ti-next.html","path":"2024-02-17-hexo-an-zhuang-zhu-ti-next.html","title":"hexo安装next主题"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>github+hexo | LeonVC</title>
+<title>hexo安装next主题 | LeonVC</title>
   
 
   <script src="/js/third-party/analytics/baidu-analytics.js"></script>
@@ -145,7 +146,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">GitHub设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">本地设置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%BB%98%E8%AE%A4%E7%9B%AE%E5%BD%95%E5%A6%82%E4%B8%8B"><span class="nav-number">2.1.</span> <span class="nav-text">默认目录如下</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">一些配置</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E4%B8%BAGemini"><span class="nav-number">2.</span> <span class="nav-text">修改主题为Gemini</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#menu%E8%8F%9C%E5%8D%95"><span class="nav-number">3.</span> <span class="nav-text">menu菜单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%96%87%E7%AB%A0%E6%91%98%E8%A6%81"><span class="nav-number">4.</span> <span class="nav-text">设置文章摘要</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="nav-number">5.</span> <span class="nav-text">开启搜索功能</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -200,7 +201,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://it.leon.vc/2024-undefined-17/github+hexo.html">
+    <link itemprop="mainEntityOfPage" href="https://it.leon.vc/2024-02-17-hexo-an-zhuang-zhu-ti-next.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -213,12 +214,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="github+hexo | LeonVC">
+      <meta itemprop="name" content="hexo安装next主题 | LeonVC">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          github+hexo
+          hexo安装next主题
         </h1>
 
         <div class="post-meta-container">
@@ -229,14 +230,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2024-02-17 13:41:05" itemprop="dateCreated datePublished" datetime="2024-02-17T13:41:05+08:00">2024-02-17</time>
+      <time title="创建时间：2024-02-17 14:31:27" itemprop="dateCreated datePublished" datetime="2024-02-17T14:31:27+08:00">2024-02-17</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-23 11:39:30" itemprop="dateModified" datetime="2024-11-23T11:39:30+08:00">2024-11-23</time>
+      <time title="修改时间：2024-11-23 11:31:09" itemprop="dateModified" datetime="2024-11-23T11:31:09+08:00">2024-11-23</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -245,6 +246,10 @@
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/computer/" itemprop="url" rel="index"><span itemprop="name">computer</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/computer/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a>
         </span>
     </span>
 
@@ -257,80 +262,38 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h3 id="GitHub设置"><a href="#GitHub设置" class="headerlink" title="GitHub设置"></a>GitHub设置</h3><ol>
-<li><p>已经有了账号，本地也有sshkey，所以需要把id_rsa.pub文件的内容复制到账号–setting–”SSH and GPG keys”下面  </p>
-</li>
-<li><p>验证是否成功的方式：<code>ssh -T git@github.com</code></p>
-</li>
-<li><p>进入github.com的网站，选择Repositories旁边的 <strong>New</strong>，输入<code>name.github.io</code>作为Repository name,下面选择 <strong>Add a README file</strong>,最后选 <strong>Create repository</strong>  </p>
-</li>
-<li><p>进入后选择 <strong>Settings</strong>，注意在<strong>General</strong>中<strong>Default branch</strong>这里写的是什么，我的是<strong>main</strong>  </p>
-</li>
-<li><p>选择<em>Pages</em>后，<em>Source</em>这里选择<strong>Deploy from a branch</strong>, <em>Branch</em> 这里选择<strong>main</strong>  </p>
-</li>
-<li><p>同时上面的<em>GitHub Pages</em>这里会显示访问的地址:<code>https://name.github.io</code></p>
-</li>
-</ol>
-<blockquote>
-<p>name必须是用户名  </p>
-</blockquote>
+    <div class="post-body" itemprop="articleBody"><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><code>git clone https://github.com/next-theme/hexo-theme-next themes/next</code>  </p>
+<h4 id="修改主题为Gemini"><a href="#修改主题为Gemini" class="headerlink" title="修改主题为Gemini"></a>修改主题为Gemini</h4><p><code>scheme: Gemini</code>  </p>
+<h4 id="menu菜单"><a href="#menu菜单" class="headerlink" title="menu菜单"></a>menu菜单</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span></span><br><span class="line">  <span class="comment">#about: /about/ || fa fa-user</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-th</span></span><br><span class="line">  <span class="comment">#archives: /archives/ || fa fa-archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu_settings:</span></span><br><span class="line">  <span class="attr">icons:</span> <span class="literal">true</span> <span class="string">//是否显示图标</span>  </span><br><span class="line">  <span class="attr">badges:</span> <span class="literal">true</span> <span class="string">//是否显示各分类数量</span></span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
 
-<h3 id="本地设置"><a href="#本地设置" class="headerlink" title="本地设置"></a>本地设置</h3><ul>
-<li><p>下载nodejs: <code>https://nodejs.org/</code>  </p>
-</li>
-<li><p>安装hexo： <code>npm install hexo-cli -g</code>  </p>
-</li>
-<li><p>设置好本地目录：比如我的<em>blog</em></p>
-</li>
-</ul>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">init</span> <span class="string">blog</span></span><br><span class="line"><span class="string">cd</span> <span class="string">blog</span></span><br><span class="line"><span class="string">npm</span> <span class="string">install</span></span><br><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-deployer-git</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure>
+<p><strong>启用tags和categories后，需要增加页面</strong>  </p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">&quot;tags&quot;</span>  </span><br><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">&quot;categories&quot;</span>  </span><br></pre></td></tr></table></figure>
 
-<p><strong>hexo命令：</strong>  </p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">clean</span> <span class="string">//</span> <span class="string">清空</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">g</span>     <span class="string">//</span> <span class="string">g=generate</span> <span class="string">生成静态目录</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">d</span>     <span class="string">//</span> <span class="string">d=deploy</span> <span class="string">发布</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">s</span>     <span class="string">//</span> <span class="string">s=server</span> <span class="string">本地调试，浏览器localhost:4000</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">test</span> <span class="string">//发一篇文章</span></span><br></pre></td></tr></table></figure>
+<p>进入<em>source</em>目录下新建的tags,categories目录，修改index.md，增加<em>type</em>  </p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2024-02-17 14:24:00</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">tags</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>也可以使用一条命令发布</strong><br><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
-<ul>
-<li>网站设置在文件 <em>_config.yml</em>中，下面是配置说明：  <ul>
-<li>title: 网站标题</li>
-<li>subtitle: 副标题</li>
-<li>description: 网站描述  </li>
-<li>author: 作者名字  </li>
-<li>language: zn-CN 网站语言</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p><em>每一个冒号后面跟一个英文的空格</em>  </p>
+<h4 id="设置文章摘要"><a href="#设置文章摘要" class="headerlink" title="设置文章摘要"></a>设置文章摘要</h4><p>默认开启：<code>excerpt_description: true</code><br><strong>在文章需要截断的地方加上 <code>&lt;!--more--&gt;</code>，首页就只会显示其之上的内容。</strong></p>
+<h4 id="开启搜索功能"><a href="#开启搜索功能" class="headerlink" title="开启搜索功能"></a>开启搜索功能</h4><blockquote>
+<p>参考：<code>https://github.com/next-theme/hexo-generator-searchdb</code>  </p>
 </blockquote>
-<p>配置主题：<br>   <code>git clone https://github.com/cjquines/hexo-theme-ascent themes/ascent</code>  </p>
-<p>修改 <em>_config.yml</em>的 <em>Deployment</em>部分：  </p>
- <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line"> <span class="attr">repo:</span> <span class="string">git@github.com:name/name.github.io.git</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">main</span>  </span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p><em>repo</em>的部分在github的 <em>Code</em>下面的 <strong>SSH</strong>中复制</p>
-</li>
-<li><p><em>branch</em>必须跟settings中 <em>GitHub Pages</em> 指定的<strong>Branch</strong>一样  </p>
-<ol>
-<li>修改 <em>themes</em> 部分：<code>theme: ascent</code>  </li>
-<li>文章发布在 <em>source&#x2F;_posts</em>中存为<strong>md</strong>格式  </li>
-<li><em>source</em> 目录下新建<strong>CNAME</strong>文件，里面写上绑定的二级域名<code>it.leon.vc</code>，然后在<em>settings</em>–<em>Pages</em>下的<em>Custom domain</em>中验证域名，这样可以绑定域名.</li>
-</ol>
-</li>
-</ul>
-<h4 id="默认目录如下"><a href="#默认目录如下" class="headerlink" title="默认目录如下"></a>默认目录如下</h4><pre><code class="yaml">├── .deploy         # 需要部署的文件
-├── node_modules    # Hexo依赖
-├── public          # 生成的静态网页文件
-├── scaffolds       # 模板，当您新建文章时，Hexo 会根据 scaffold 来建立文件。
-├── source          # 博客正文和其他源文件，404、favicon、CNAME 都应该放在这里
-| ├── _drafts       #   草稿
-| └── _posts        #   文章
-├── themes          # 主题，Hexo 会根据主题来生成各种各样的静态页面。
-├── _config.yml     # 全局配置文件，您可以在此配置大部分的参数。
-└── package.json    # npm 依赖配置文件
+<p>安装搜索：<code>$ npm install hexo-generator-searchdb</code>  </p>
+<p>根目录 <em>_config.yml</em> 文件增加如下:  </p>
+<pre><code class="yaml">search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
 </code></pre>
-<h3 id="一些配置"><a href="#一些配置" class="headerlink" title="一些配置"></a>一些配置</h3><p>更改永久链接：  </p>
-<p><code>permalink: :year-:month-:day-:name.html</code>  </p>
+<p>修改theme&#x2F;next目录下的 <em>_config.yml</em>:</p>
+<pre><code class="yaml"># Local Search
+# Dependencies: https://github.com/next-theme/hexo-generator-searchdb
+local_search:
+  enable: true
+</code></pre>
 
     </div>
 
@@ -343,16 +306,20 @@
               <a href="/tags/hexo/" rel="tag"># hexo</a>
               <a href="/tags/github/" rel="tag"># github</a>
               <a href="/tags/blog/" rel="tag"># blog</a>
+              <a href="/tags/theme/" rel="tag"># theme</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2024-02-17-github+hexo.html" rel="prev" title="github+hexo">
+                  <i class="fa fa-angle-left"></i> github+hexo
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2024-undefined-17/hexo-an-zhuang-zhu-ti-next.html" rel="next" title="hexo安装next主题">
-                  hexo安装next主题 <i class="fa fa-angle-right"></i>
+                <a href="/2024-11-20-Joplin-Publish-fa-bu-wen-zhang.html" rel="next" title="Joplin Publish自动发布文章">
+                  Joplin Publish自动发布文章 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
