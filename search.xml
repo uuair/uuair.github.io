@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2024-11-22.md</title>
+    <url>/2024-11-22-2024-11-22.html</url>
+    <content><![CDATA[<h1 id="这是标题"><a href="#这是标题" class="headerlink" title="这是标题"></a>这是标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2>]]></content>
+      <categories>
+        <category>日记</category>
+      </categories>
+  </entry>
+  <entry>
     <title>极简生活.md</title>
     <url>/2024-11-23-yibenhaoshu.html</url>
     <content><![CDATA[<p>读一本好书，就好比跟一个特别和善的人做朋友，在一个美好的午后喝着茶，聊着天，听他诉说着他的过往。</p>
 ]]></content>
       <categories>
-        <category>read</category>
+        <category>读书</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>下载资源</title>
+    <url>/2024-11-23-download.html</url>
+    <content><![CDATA[<p>这是最好的下载资源，地址：</p>
+]]></content>
+      <categories>
+        <category>资源</category>
       </categories>
   </entry>
   <entry>
@@ -25,8 +42,8 @@
 </ol>
 ]]></content>
       <categories>
-        <category>computer</category>
-        <category>web</category>
+        <category>计算机</category>
+        <category>网站</category>
       </categories>
       <tags>
         <tag>hexo</tag>
@@ -34,23 +51,6 @@
         <tag>blog</tag>
         <tag>Joplin</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>下载资源</title>
-    <url>/2024-11-23-download.html</url>
-    <content><![CDATA[<p>这是最好的下载资源，地址：</p>
-]]></content>
-      <categories>
-        <category>resource</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>2024-11-22.md</title>
-    <url>/2024-11-22-2024-11-22.html</url>
-    <content><![CDATA[<h1 id="这是标题"><a href="#这是标题" class="headerlink" title="这是标题"></a>这是标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2>]]></content>
-      <categories>
-        <category>diary</category>
-      </categories>
   </entry>
   <entry>
     <title>github+hexo</title>
@@ -131,7 +131,7 @@
 <p><code>permalink: :year-:month-:day-:name.html</code>  </p>
 ]]></content>
       <categories>
-        <category>computer</category>
+        <category>计算机</category>
       </categories>
       <tags>
         <tag>hexo</tag>
@@ -230,8 +230,8 @@
 </tbody></table>
 ]]></content>
       <categories>
-        <category>computer</category>
-        <category>web</category>
+        <category>计算机</category>
+        <category>网站</category>
       </categories>
       <tags>
         <tag>hexo</tag>
