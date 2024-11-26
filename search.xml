@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2024-11-22.md</title>
+    <url>/2024-11-22-2024-11-22.html</url>
+    <content><![CDATA[<h1 id="这是标题"><a href="#这是标题" class="headerlink" title="这是标题"></a>这是标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2>]]></content>
+      <categories>
+        <category>日记</category>
+      </categories>
+  </entry>
+  <entry>
     <title>下载资源</title>
     <url>/2024-11-23-download.html</url>
     <content><![CDATA[<p>这是最好的下载资源，地址：</p>
@@ -10,12 +18,86 @@
       </categories>
   </entry>
   <entry>
-    <title>2024-11-22.md</title>
-    <url>/2024-11-22-2024-11-22.html</url>
-    <content><![CDATA[<h1 id="这是标题"><a href="#这是标题" class="headerlink" title="这是标题"></a>这是标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2>]]></content>
+    <title>极简生活.md</title>
+    <url>/2024-11-23-yibenhaoshu.html</url>
+    <content><![CDATA[<p>读一本好书，就好比跟一个特别和善的人做朋友，在一个美好的午后喝着茶，聊着天，听他诉说着他的过往。</p>
+]]></content>
       <categories>
-        <category>日记</category>
+        <category>读书</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Joplin Publish自动发布文章</title>
+    <url>/2024-11-20-Joplin-Publish-fa-bu-wen-zhang.html</url>
+    <content><![CDATA[<h3 id="第一步：安装Joplin-Publish插件"><a href="#第一步：安装Joplin-Publish插件" class="headerlink" title="第一步：安装Joplin Publish插件"></a>第一步：安装Joplin Publish插件</h3><p>下载地址：<a href="https://github.com/rxliuli/joplin-utils/releases">https://github.com/rxliuli/joplin-utils/releases</a>  </p>
+<h3 id="第二部：修改仓库"><a href="#第二部：修改仓库" class="headerlink" title="第二部：修改仓库"></a>第二部：修改仓库</h3><ol>
+<li>打开仓库后，在 <strong>Setting</strong> 中选择左侧 <strong>Pages</strong> ，将 <strong>Build and deployment</strong> 修改为 <code>Github actions</code></li>
+</ol>
+<span id="more"></span>
+
+<h3 id="第三步：使用Joplin发布文章"><a href="#第三步：使用Joplin发布文章" class="headerlink" title="第三步：使用Joplin发布文章"></a>第三步：使用Joplin发布文章</h3><ol>
+<li>获得github密钥：<br>打开<a href="https://github.com/settings/tokens/new">https://github.com/settings/tokens/new</a>, 点击<code>Genarate new token</code>，选择第一个<code>repo</code>并拉到最下面<strong>Genarate token</strong>, 然后在跳转页面复制token。  </li>
+<li>在Joplin Pubilsh中填写token,username以及仓库名称。</li>
+<li>给要发布的笔记添加<code>Blog</code>标签，然后选择Joplin Publish。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>计算机</category>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>blog</tag>
+        <tag>Joplin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo安装next主题</title>
+    <url>/2024-02-17-hexo-an-zhuang-zhu-ti-next.html</url>
+    <content><![CDATA[<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><code>git clone https://github.com/next-theme/hexo-theme-next themes/next</code>  </p>
+<h4 id="修改主题为Gemini"><a href="#修改主题为Gemini" class="headerlink" title="修改主题为Gemini"></a>修改主题为Gemini</h4><p><code>scheme: Gemini</code>  </p>
+<h4 id="menu菜单"><a href="#menu菜单" class="headerlink" title="menu菜单"></a>menu菜单</h4><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span></span><br><span class="line">  <span class="comment">#about: /about/ || fa fa-user</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-th</span></span><br><span class="line">  <span class="comment">#archives: /archives/ || fa fa-archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu_settings:</span></span><br><span class="line">  <span class="attr">icons:</span> <span class="literal">true</span> <span class="string">//是否显示图标</span>  </span><br><span class="line">  <span class="attr">badges:</span> <span class="literal">true</span> <span class="string">//是否显示各分类数量</span></span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p><strong>启用tags和categories后，需要增加页面</strong>  </p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">&quot;tags&quot;</span>  </span><br><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">&quot;categories&quot;</span>  </span><br></pre></td></tr></table></figure>
+
+<p>进入<em>source</em>目录下新建的tags,categories目录，修改index.md，增加<em>type</em>  </p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2024-02-17 14:24:00</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">tags</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="设置文章摘要"><a href="#设置文章摘要" class="headerlink" title="设置文章摘要"></a>设置文章摘要</h4><p>默认开启：<code>excerpt_description: true</code><br><strong>在文章需要截断的地方加上 <code>&lt;!--more--&gt;</code>，首页就只会显示其之上的内容。</strong></p>
+<h4 id="开启搜索功能"><a href="#开启搜索功能" class="headerlink" title="开启搜索功能"></a>开启搜索功能</h4><blockquote>
+<p>参考：<code>https://github.com/next-theme/hexo-generator-searchdb</code>  </p>
+</blockquote>
+<p>安装搜索：<code>$ npm install hexo-generator-searchdb</code>  </p>
+<p>根目录 <em>_config.yml</em> 文件增加如下:  </p>
+<pre><code class="yaml">search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+</code></pre>
+<p>修改theme&#x2F;next目录下的 <em>_config.yml</em>:</p>
+<pre><code class="yaml"># Local Search
+# Dependencies: https://github.com/next-theme/hexo-generator-searchdb
+local_search:
+  enable: true
+</code></pre>
+]]></content>
+      <categories>
+        <category>computer</category>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>blog</tag>
+        <tag>theme</tag>
+      </tags>
   </entry>
   <entry>
     <title>github+hexo</title>
@@ -103,15 +185,6 @@
         <tag>github</tag>
         <tag>blog</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>极简生活.md</title>
-    <url>/2024-11-23-yibenhaoshu.html</url>
-    <content><![CDATA[<p>读一本好书，就好比跟一个特别和善的人做朋友，在一个美好的午后喝着茶，聊着天，听他诉说着他的过往。</p>
-]]></content>
-      <categories>
-        <category>读书</category>
-      </categories>
   </entry>
   <entry>
     <title>vscode+hexo</title>
@@ -210,79 +283,6 @@
       <tags>
         <tag>hexo</tag>
         <tag>vscode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Joplin Publish自动发布文章</title>
-    <url>/2024-11-20-Joplin-Publish-fa-bu-wen-zhang.html</url>
-    <content><![CDATA[<h3 id="第一步：安装Joplin-Publish插件"><a href="#第一步：安装Joplin-Publish插件" class="headerlink" title="第一步：安装Joplin Publish插件"></a>第一步：安装Joplin Publish插件</h3><p>下载地址：<a href="https://github.com/rxliuli/joplin-utils/releases">https://github.com/rxliuli/joplin-utils/releases</a>  </p>
-<h3 id="第二部：修改仓库"><a href="#第二部：修改仓库" class="headerlink" title="第二部：修改仓库"></a>第二部：修改仓库</h3><ol>
-<li>打开仓库后，在 <strong>Setting</strong> 中选择左侧 <strong>Pages</strong> ，将 <strong>Build and deployment</strong> 修改为 <code>Github actions</code></li>
-</ol>
-<span id="more"></span>
-
-<h3 id="第三步：使用Joplin发布文章"><a href="#第三步：使用Joplin发布文章" class="headerlink" title="第三步：使用Joplin发布文章"></a>第三步：使用Joplin发布文章</h3><ol>
-<li>获得github密钥：<br>打开<a href="https://github.com/settings/tokens/new">https://github.com/settings/tokens/new</a>, 点击<code>Genarate new token</code>，选择第一个<code>repo</code>并拉到最下面<strong>Genarate token</strong>, 然后在跳转页面复制token。  </li>
-<li>在Joplin Pubilsh中填写token,username以及仓库名称。</li>
-<li>给要发布的笔记添加<code>Blog</code>标签，然后选择Joplin Publish。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>计算机</category>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>github</tag>
-        <tag>blog</tag>
-        <tag>Joplin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo安装next主题</title>
-    <url>/2024-02-17-hexo-an-zhuang-zhu-ti-next.html</url>
-    <content><![CDATA[<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><code>git clone https://github.com/next-theme/hexo-theme-next themes/next</code>  </p>
-<h4 id="修改主题为Gemini"><a href="#修改主题为Gemini" class="headerlink" title="修改主题为Gemini"></a>修改主题为Gemini</h4><p><code>scheme: Gemini</code>  </p>
-<h4 id="menu菜单"><a href="#menu菜单" class="headerlink" title="menu菜单"></a>menu菜单</h4><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span></span><br><span class="line">  <span class="comment">#about: /about/ || fa fa-user</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-th</span></span><br><span class="line">  <span class="comment">#archives: /archives/ || fa fa-archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu_settings:</span></span><br><span class="line">  <span class="attr">icons:</span> <span class="literal">true</span> <span class="string">//是否显示图标</span>  </span><br><span class="line">  <span class="attr">badges:</span> <span class="literal">true</span> <span class="string">//是否显示各分类数量</span></span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<p><strong>启用tags和categories后，需要增加页面</strong>  </p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">&quot;tags&quot;</span>  </span><br><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">&quot;categories&quot;</span>  </span><br></pre></td></tr></table></figure>
-
-<p>进入<em>source</em>目录下新建的tags,categories目录，修改index.md，增加<em>type</em>  </p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2024-02-17 14:24:00</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">tags</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="设置文章摘要"><a href="#设置文章摘要" class="headerlink" title="设置文章摘要"></a>设置文章摘要</h4><p>默认开启：<code>excerpt_description: true</code><br><strong>在文章需要截断的地方加上 <code>&lt;!--more--&gt;</code>，首页就只会显示其之上的内容。</strong></p>
-<h4 id="开启搜索功能"><a href="#开启搜索功能" class="headerlink" title="开启搜索功能"></a>开启搜索功能</h4><blockquote>
-<p>参考：<code>https://github.com/next-theme/hexo-generator-searchdb</code>  </p>
-</blockquote>
-<p>安装搜索：<code>$ npm install hexo-generator-searchdb</code>  </p>
-<p>根目录 <em>_config.yml</em> 文件增加如下:  </p>
-<pre><code class="yaml">search:
-  path: search.xml
-  field: post
-  content: true
-  format: html
-</code></pre>
-<p>修改theme&#x2F;next目录下的 <em>_config.yml</em>:</p>
-<pre><code class="yaml"># Local Search
-# Dependencies: https://github.com/next-theme/hexo-generator-searchdb
-local_search:
-  enable: true
-</code></pre>
-]]></content>
-      <categories>
-        <category>computer</category>
-        <category>web</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>github</tag>
-        <tag>blog</tag>
-        <tag>theme</tag>
       </tags>
   </entry>
 </search>
