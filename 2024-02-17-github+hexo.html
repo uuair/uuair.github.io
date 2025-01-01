@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="4051edf475dfba9c996d76f8a3abd52e">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"it.leon.vc","root":"/","images":"/images","scheme":"Gemini","darkmode":"ture","version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="GitHub设置 已经有了账号，本地也有sshkey，所以需要把id_rsa.pub文件的内容复制到账号–setting–”SSH and GPG keys”下面    验证是否成功的方式：ssh -T git@github.com  进入github.com的网站，选择Repositories旁边的 New，输入name.github.io作为Repository name,下面选择 Add a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="github+hexo">
+<meta property="og:url" content="https://it.leon.vc/2024-02-17-github+hexo.html">
+<meta property="og:site_name" content="LeonVC">
+<meta property="og:description" content="GitHub设置 已经有了账号，本地也有sshkey，所以需要把id_rsa.pub文件的内容复制到账号–setting–”SSH and GPG keys”下面    验证是否成功的方式：ssh -T git@github.com  进入github.com的网站，选择Repositories旁边的 New，输入name.github.io作为Repository name,下面选择 Add a">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-02-17T05:41:05.000Z">
+<meta property="article:modified_time" content="2024-11-26T02:27:05.209Z">
+<meta property="article:author" content="Leon">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="github">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://it.leon.vc/2024-02-17-github+hexo.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://it.leon.vc/2024-02-17-github+hexo.html","path":"2024-02-17-github+hexo.html","title":"github+hexo"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>github+hexo | LeonVC</title>
+  
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?2319017bb4c86f28274879091c1163f2"></script>
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">LeonVC</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">6</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">7</span></a></li><li class="menu-item menu-item-diary"><a href="/categories/%E6%97%A5%E8%AE%B0/" rel="section"><i class="fa fa-inbox fa-fw"></i>日记</a></li><li class="menu-item menu-item-computer"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="section"><i class="fa fa-computer fa-fw"></i>计算机</a></li><li class="menu-item menu-item-read"><a href="/categories/%E8%AF%BB%E4%B9%A6/" rel="section"><i class="fa fa-readme fa-fw"></i>读书</a></li><li class="menu-item menu-item-resource"><a href="/categories/%E8%B5%84%E6%BA%90/" rel="section"><i class="fa fa-osi fa-fw"></i>资源</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">8</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">GitHub设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">本地设置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%BB%98%E8%AE%A4%E7%9B%AE%E5%BD%95%E5%A6%82%E4%B8%8B"><span class="nav-number">2.1.</span> <span class="nav-text">默认目录如下</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">一些配置</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Leon</p>
+  <div class="site-description" itemprop="description">略懂IT，略懂金融</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://it.leon.vc/2024-02-17-github+hexo.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Leon">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LeonVC">
+      <meta itemprop="description" content="略懂IT，略懂金融">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="github+hexo | LeonVC">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          github+hexo
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-02-17 13:41:05" itemprop="dateCreated datePublished" datetime="2024-02-17T13:41:05+08:00">2024-02-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-11-26 10:27:05" itemprop="dateModified" datetime="2024-11-26T10:27:05+08:00">2024-11-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">计算机</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h3 id="GitHub设置"><a href="#GitHub设置" class="headerlink" title="GitHub设置"></a>GitHub设置</h3><ol>
+<li><p>已经有了账号，本地也有sshkey，所以需要把id_rsa.pub文件的内容复制到账号–setting–”SSH and GPG keys”下面  </p>
+</li>
+<li><p>验证是否成功的方式：<code>ssh -T git@github.com</code></p>
+</li>
+<li><p>进入github.com的网站，选择Repositories旁边的 <strong>New</strong>，输入<code>name.github.io</code>作为Repository name,下面选择 <strong>Add a README file</strong>,最后选 <strong>Create repository</strong>  </p>
+</li>
+<li><p>进入后选择 <strong>Settings</strong>，注意在<strong>General</strong>中<strong>Default branch</strong>这里写的是什么，我的是<strong>main</strong>  </p>
+</li>
+<li><p>选择<em>Pages</em>后，<em>Source</em>这里选择<strong>Deploy from a branch</strong>, <em>Branch</em> 这里选择<strong>main</strong>  </p>
+</li>
+<li><p>同时上面的<em>GitHub Pages</em>这里会显示访问的地址:<code>https://name.github.io</code></p>
+</li>
+</ol>
+<blockquote>
+<p>name必须是用户名  </p>
+</blockquote>
+<span id="more"></span>
+
+<h3 id="本地设置"><a href="#本地设置" class="headerlink" title="本地设置"></a>本地设置</h3><ul>
+<li><p>下载nodejs: <code>https://nodejs.org/</code>  </p>
+</li>
+<li><p>安装hexo： <code>npm install hexo-cli -g</code>  </p>
+</li>
+<li><p>设置好本地目录：比如我的<em>blog</em></p>
+</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">init</span> <span class="string">blog</span></span><br><span class="line"><span class="string">cd</span> <span class="string">blog</span></span><br><span class="line"><span class="string">npm</span> <span class="string">install</span></span><br><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-deployer-git</span> <span class="string">--save</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>hexo命令：</strong>  </p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">clean</span> <span class="string">//</span> <span class="string">清空</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">g</span>     <span class="string">//</span> <span class="string">g=generate</span> <span class="string">生成静态目录</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">d</span>     <span class="string">//</span> <span class="string">d=deploy</span> <span class="string">发布</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">s</span>     <span class="string">//</span> <span class="string">s=server</span> <span class="string">本地调试，浏览器localhost:4000</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">test</span> <span class="string">//发一篇文章</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>也可以使用一条命令发布</strong><br><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+<ul>
+<li>网站设置在文件 <em>_config.yml</em>中，下面是配置说明：  <ul>
+<li>title: 网站标题</li>
+<li>subtitle: 副标题</li>
+<li>description: 网站描述  </li>
+<li>author: 作者名字  </li>
+<li>language: zn-CN 网站语言</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><em>每一个冒号后面跟一个英文的空格</em>  </p>
+</blockquote>
+<p>配置主题：<br>   <code>git clone https://github.com/cjquines/hexo-theme-ascent themes/ascent</code>  </p>
+<p>修改 <em>_config.yml</em>的 <em>Deployment</em>部分：  </p>
+ <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line"> <span class="attr">repo:</span> <span class="string">git@github.com:name/name.github.io.git</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">main</span>  </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><em>repo</em>的部分在github的 <em>Code</em>下面的 <strong>SSH</strong>中复制</p>
+</li>
+<li><p><em>branch</em>必须跟settings中 <em>GitHub Pages</em> 指定的<strong>Branch</strong>一样  </p>
+<ol>
+<li>修改 <em>themes</em> 部分：<code>theme: ascent</code>  </li>
+<li>文章发布在 <em>source&#x2F;_posts</em>中存为<strong>md</strong>格式  </li>
+<li><em>source</em> 目录下新建<strong>CNAME</strong>文件，里面写上绑定的二级域名<code>it.leon.vc</code>，然后在<em>settings</em>–<em>Pages</em>下的<em>Custom domain</em>中验证域名，这样可以绑定域名.</li>
+</ol>
+</li>
+</ul>
+<h4 id="默认目录如下"><a href="#默认目录如下" class="headerlink" title="默认目录如下"></a>默认目录如下</h4><pre><code class="yaml">├── .deploy         # 需要部署的文件
+├── node_modules    # Hexo依赖
+├── public          # 生成的静态网页文件
+├── scaffolds       # 模板，当您新建文章时，Hexo 会根据 scaffold 来建立文件。
+├── source          # 博客正文和其他源文件，404、favicon、CNAME 都应该放在这里
+| ├── _drafts       #   草稿
+| └── _posts        #   文章
+├── themes          # 主题，Hexo 会根据主题来生成各种各样的静态页面。
+├── _config.yml     # 全局配置文件，您可以在此配置大部分的参数。
+└── package.json    # npm 依赖配置文件
+</code></pre>
+<h3 id="一些配置"><a href="#一些配置" class="headerlink" title="一些配置"></a>一些配置</h3><p>更改永久链接：  </p>
+<p><code>permalink: :year-:month-:day-:name.html</code>  </p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/github/" rel="tag"># github</a>
+              <a href="/tags/blog/" rel="tag"># blog</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024-02-17-hexoandnext.html" rel="next" title="hexo安装next主题">
+                  hexo安装next主题 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Leon</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
