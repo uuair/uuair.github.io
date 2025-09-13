@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>极简生活.md</title>
+    <url>/2024-11-23-yibenhaoshu.html</url>
+    <content><![CDATA[<p>读一本好书，就好比跟一个特别和善的人做朋友，在一个美好的午后喝着茶，聊着天，听他诉说着他的过往。</p>
+]]></content>
+      <categories>
+        <category>读书</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>2024-11-22.md</title>
+    <url>/2024-11-22-2024-11-22.html</url>
+    <content><![CDATA[<h1 id="这是标题"><a href="#这是标题" class="headerlink" title="这是标题"></a>这是标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2>]]></content>
+      <categories>
+        <category>日记</category>
+      </categories>
+  </entry>
+  <entry>
     <title>关于你</title>
     <url>/2025-01-02-aboutyou.html</url>
     <content><![CDATA[<p>你的眼睛，就像后海一样，以前浑浊，现在清澈无比。  </p>
@@ -121,122 +138,6 @@
       <categories>
         <category>资源</category>
       </categories>
-  </entry>
-  <entry>
-    <title>极简生活.md</title>
-    <url>/2024-11-23-yibenhaoshu.html</url>
-    <content><![CDATA[<p>读一本好书，就好比跟一个特别和善的人做朋友，在一个美好的午后喝着茶，聊着天，听他诉说着他的过往。</p>
-]]></content>
-      <categories>
-        <category>读书</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>2024-11-22.md</title>
-    <url>/2024-11-22-2024-11-22.html</url>
-    <content><![CDATA[<h1 id="这是标题"><a href="#这是标题" class="headerlink" title="这是标题"></a>这是标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2>]]></content>
-      <categories>
-        <category>日记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>vscode+hexo</title>
-    <url>/2024-11-21-vscode-hexo.html</url>
-    <content><![CDATA[<p>当我确定了用md格式记录笔记，并且使用hexo发布的时候，我开始着手准备我的工具。这十几年我一直使用印象笔记在同步我的信息，用wordpress搭建博客，但印象笔记的笔记好像无法连同格式复制到wordpress当中，并且随着印象笔记的没落，似乎官方也在2023年以后不在更新它的各种媒体信息，而我的会员虽然还有很久才到期，现在却也开始准备保存到本地了。<em>目前还没有找到好的导出方案</em>  </p>
-<p>笔记软件我选择了obsidian，可不管说的多神气，对于我这种刚开始准备写几个字的人来说，不需要那么多功能，在之前修改笔记的时候，恰巧我用vscode打开，同时安装了<code>Markdown All in One</code>这个插件后，这不也挺好的么，在反复用hexo发布笔记并且调整格式的时候，安装了<code>markdownlint</code>用来调整markdown的格式，一次性就把格式弄好了，那我为什么还要在多安装一个软件呢？看来vscode就够了。仅以此笔记，记录一下用vscode写hexo的方法。  </p>
-<span id="more"></span>
-
-<h3 id="Hexo的写作方式"><a href="#Hexo的写作方式" class="headerlink" title="Hexo的写作方式"></a>Hexo的写作方式</h3><p>按照<a href="https://hexo.io/zh-cn/docs/writing.html">Hexo 官方文档</a>的说明，创建新文章的命令如下：<br><code>$ hexo new [layout] &lt;title&gt;</code><br>其中：</p>
-<ul>
-<li>layout: 新文章的指定布局，默认post布局，其余两个布局分别是draft和page。  </li>
-<li>title:  标题，标题中有空格的时候，必须包围在一对半角双引号中。</li>
-</ul>
-<h3 id="关于Hexo的模板"><a href="#关于Hexo的模板" class="headerlink" title="关于Hexo的模板"></a>关于Hexo的模板</h3><p>Hexo自动套用scaffolds\post.md模板来生成post格式的文件，而Hexo的文章一般需要的内容如下：  </p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> &#123;&#123;<span class="string">title</span>&#125;&#125;</span><br><span class="line"><span class="attr">date:</span> &#123;&#123;<span class="string">date</span>&#125;&#125;</span><br><span class="line"><span class="attr">updated:</span> &#123;&#123;<span class="string">date</span>&#125;&#125;</span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="meta">---  </span></span><br></pre></td></tr></table></figure>
-
-<p><code>tags:</code>节点中，如果有多个标签：  </p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 单一标签  </span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">hexo</span>  </span><br><span class="line"><span class="comment"># 多个标签  </span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">hexo</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">git</span>  </span><br></pre></td></tr></table></figure>
-
-<p><code>categories:</code>节点也是如此：  </p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#单一类别  </span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">Computer</span>  </span><br><span class="line"><span class="comment">#多个类别  </span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Computer</span>  </span><br><span class="line"><span class="bullet">-</span> <span class="string">Web</span></span><br></pre></td></tr></table></figure>
-
-<p>上面的<code>Web</code>是<code>Computer</code>的子类，如果需要多个分类，用下面list中的方法：  </p>
-<pre><code class="yaml">categories:  
-- [Computer, Web]
-- [Computer, Games]
-- [Life]
-</code></pre>
-<p>此时这盘文章同时包括三个分类：<code>Web</code>和<code>Games</code>分别都是父类<code>Computer</code>的子类，同时<code>Life</code>是一个没有子分类的分类  </p>
-<p><code>drafts</code>文件存在<code>source\_drafts</code>文件夹中，page页面存放在<code>source</code>文件夹中。  </p>
-<p><code>hexo n draft &quot;my-idea&quot;</code>来创建一篇草稿，同时也可以用<code>hexo publish &quot;my-idea:</code>命令将草稿从source_drafts中转移到source_post中，并自动填写发布日期。  </p>
-<blockquote>
-<p>也可以在站点配置中，把<code>default_layout</code>设置成<code>draft</code>，这样运行<code>hexo n &quot;&lt;filename&gt;&quot;</code>命令将直接创建草稿。  </p>
-</blockquote>
-<h3 id="使用Visual-Studio-Code撰写文章"><a href="#使用Visual-Studio-Code撰写文章" class="headerlink" title="使用Visual Studio Code撰写文章"></a>使用Visual Studio Code撰写文章</h3><p>启动VS Code，选择 <strong>文件|打开文件夹</strong> 打开站点文件夹。  </p>
-<p>按下Ctrl+`激活VS Code下方的“终端”面板，并输入<code>hexo n &quot;myblog&quot;</code>并回车。  </p>
-<blockquote>
-<p>Hexo的简化命令，<code>hexo n</code>相当于<code>hexo new</code>,<code>hexo s</code>相当于<code>hexo server</code>,所以在目录中建立<code>.bat</code>文件：<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code>  </p>
-</blockquote>
-<p>按下<strong>Ctrl+P</strong>激活VS Code的“快速打开”面板，并输入刚刚创建的文件名<code>myblog</code>并回车。  </p>
-<p>预览文章可以按下<strong>Ctrl+K,V</strong>打开VS Code自带的Markdown预览窗口。  </p>
-<p>整体预览可以激活终端并执行<code>hexo s -o</code>，启动Hexo本地服务器并自动在默认浏览器打开(这是<code>-o</code>选项的效果)  </p>
-<h3 id="有用的插件"><a href="#有用的插件" class="headerlink" title="有用的插件"></a>有用的插件</h3><h4 id="markdownlint"><a href="#markdownlint" class="headerlink" title="markdownlint"></a>markdownlint</h4><p>markdownlint是一个Markdown语法检查其，不符合Markdown规范的内容将被标上波浪线，并提供相应的改进提示。  </p>
-<blockquote>
-<p>tips: 按下<strong>Ctrl+Shift+X</strong>在侧边栏打开“扩展”面板，输入扩展名称即可自动搜索。  </p>
-</blockquote>
-<h3 id="Markdown-All-in-one"><a href="#Markdown-All-in-one" class="headerlink" title="Markdown All in one"></a>Markdown All in one</h3><table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>命令</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Ctrl&#x2F;Cmd + B</td>
-<td>切换加粗</td>
-</tr>
-<tr>
-<td>Ctrl&#x2F;Cmd + I</td>
-<td>切换斜体</td>
-</tr>
-<tr>
-<td>Alt+S (Windows)</td>
-<td>切换删除线</td>
-</tr>
-<tr>
-<td>Ctrl + Shift + ]</td>
-<td>切换标题（上级）</td>
-</tr>
-<tr>
-<td>Ctrl + Shift + [</td>
-<td>切换标题（下）</td>
-</tr>
-<tr>
-<td>Ctrl&#x2F;Cmd + M</td>
-<td>切换数学环境</td>
-</tr>
-<tr>
-<td>Alt + C</td>
-<td>勾选&#x2F;取消勾选任务列</td>
-</tr>
-<tr>
-<td>Ctrl&#x2F;Cmd + Shift + V</td>
-<td>切换预览</td>
-</tr>
-<tr>
-<td>Ctrl&#x2F;Cmd + K V</td>
-<td>切换侧边预览</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>计算机</category>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>vscode</tag>
-      </tags>
   </entry>
   <entry>
     <title>Joplin Publish自动发布文章</title>
@@ -372,6 +273,12 @@ local_search:
 <li>修改 <em>themes</em> 部分：<code>theme: ascent</code>  </li>
 <li>文章发布在 <em>source&#x2F;_posts</em>中存为<strong>md</strong>格式  </li>
 <li><em>source</em> 目录下新建<strong>CNAME</strong>文件，里面写上绑定的二级域名<code>it.leon.vc</code>，然后在<em>settings</em>–<em>Pages</em>下的<em>Custom domain</em>中验证域名，这样可以绑定域名.</li>
+<li>设置域名A记录指向如下ip之一：  <blockquote>
+<blockquote>
+<p>185.199.108.153<br>185.199.109.153<br>185.199.110.153<br>185.199.111.153</p>
+</blockquote>
+</blockquote>
+</li>
 </ol>
 </li>
 </ul>
@@ -397,6 +304,105 @@ local_search:
         <tag>hexo</tag>
         <tag>github</tag>
         <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vscode+hexo</title>
+    <url>/2024-11-21-vscode-hexo.html</url>
+    <content><![CDATA[<p>当我确定了用md格式记录笔记，并且使用hexo发布的时候，我开始着手准备我的工具。这十几年我一直使用印象笔记在同步我的信息，用wordpress搭建博客，但印象笔记的笔记好像无法连同格式复制到wordpress当中，并且随着印象笔记的没落，似乎官方也在2023年以后不在更新它的各种媒体信息，而我的会员虽然还有很久才到期，现在却也开始准备保存到本地了。<em>目前还没有找到好的导出方案</em>  </p>
+<p>笔记软件我选择了obsidian，可不管说的多神气，对于我这种刚开始准备写几个字的人来说，不需要那么多功能，在之前修改笔记的时候，恰巧我用vscode打开，同时安装了<code>Markdown All in One</code>这个插件后，这不也挺好的么，在反复用hexo发布笔记并且调整格式的时候，安装了<code>markdownlint</code>用来调整markdown的格式，一次性就把格式弄好了，那我为什么还要在多安装一个软件呢？看来vscode就够了。仅以此笔记，记录一下用vscode写hexo的方法。  </p>
+<span id="more"></span>
+
+<h3 id="Hexo的写作方式"><a href="#Hexo的写作方式" class="headerlink" title="Hexo的写作方式"></a>Hexo的写作方式</h3><p>按照<a href="https://hexo.io/zh-cn/docs/writing.html">Hexo 官方文档</a>的说明，创建新文章的命令如下：<br><code>$ hexo new [layout] &lt;title&gt;</code><br>其中：</p>
+<ul>
+<li>layout: 新文章的指定布局，默认post布局，其余两个布局分别是draft和page。  </li>
+<li>title:  标题，标题中有空格的时候，必须包围在一对半角双引号中。</li>
+</ul>
+<h3 id="关于Hexo的模板"><a href="#关于Hexo的模板" class="headerlink" title="关于Hexo的模板"></a>关于Hexo的模板</h3><p>Hexo自动套用scaffolds\post.md模板来生成post格式的文件，而Hexo的文章一般需要的内容如下：  </p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> &#123;&#123;<span class="string">title</span>&#125;&#125;</span><br><span class="line"><span class="attr">date:</span> &#123;&#123;<span class="string">date</span>&#125;&#125;</span><br><span class="line"><span class="attr">updated:</span> &#123;&#123;<span class="string">date</span>&#125;&#125;</span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="meta">---  </span></span><br></pre></td></tr></table></figure>
+
+<p><code>tags:</code>节点中，如果有多个标签：  </p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 单一标签  </span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">hexo</span>  </span><br><span class="line"><span class="comment"># 多个标签  </span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">hexo</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">git</span>  </span><br></pre></td></tr></table></figure>
+
+<p><code>categories:</code>节点也是如此：  </p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#单一类别  </span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">Computer</span>  </span><br><span class="line"><span class="comment">#多个类别  </span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Computer</span>  </span><br><span class="line"><span class="bullet">-</span> <span class="string">Web</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的<code>Web</code>是<code>Computer</code>的子类，如果需要多个分类，用下面list中的方法：  </p>
+<pre><code class="yaml">categories:  
+- [Computer, Web]
+- [Computer, Games]
+- [Life]
+</code></pre>
+<p>此时这盘文章同时包括三个分类：<code>Web</code>和<code>Games</code>分别都是父类<code>Computer</code>的子类，同时<code>Life</code>是一个没有子分类的分类  </p>
+<p><code>drafts</code>文件存在<code>source\_drafts</code>文件夹中，page页面存放在<code>source</code>文件夹中。  </p>
+<p><code>hexo n draft &quot;my-idea&quot;</code>来创建一篇草稿，同时也可以用<code>hexo publish &quot;my-idea:</code>命令将草稿从source_drafts中转移到source_post中，并自动填写发布日期。  </p>
+<blockquote>
+<p>也可以在站点配置中，把<code>default_layout</code>设置成<code>draft</code>，这样运行<code>hexo n &quot;&lt;filename&gt;&quot;</code>命令将直接创建草稿。  </p>
+</blockquote>
+<h3 id="使用Visual-Studio-Code撰写文章"><a href="#使用Visual-Studio-Code撰写文章" class="headerlink" title="使用Visual Studio Code撰写文章"></a>使用Visual Studio Code撰写文章</h3><p>启动VS Code，选择 <strong>文件|打开文件夹</strong> 打开站点文件夹。  </p>
+<p>按下Ctrl+`激活VS Code下方的“终端”面板，并输入<code>hexo n &quot;myblog&quot;</code>并回车。  </p>
+<blockquote>
+<p>Hexo的简化命令，<code>hexo n</code>相当于<code>hexo new</code>,<code>hexo s</code>相当于<code>hexo server</code>,所以在目录中建立<code>.bat</code>文件：<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code>  </p>
+</blockquote>
+<p>按下<strong>Ctrl+P</strong>激活VS Code的“快速打开”面板，并输入刚刚创建的文件名<code>myblog</code>并回车。  </p>
+<p>预览文章可以按下<strong>Ctrl+K,V</strong>打开VS Code自带的Markdown预览窗口。  </p>
+<p>整体预览可以激活终端并执行<code>hexo s -o</code>，启动Hexo本地服务器并自动在默认浏览器打开(这是<code>-o</code>选项的效果)  </p>
+<h3 id="有用的插件"><a href="#有用的插件" class="headerlink" title="有用的插件"></a>有用的插件</h3><h4 id="markdownlint"><a href="#markdownlint" class="headerlink" title="markdownlint"></a>markdownlint</h4><p>markdownlint是一个Markdown语法检查其，不符合Markdown规范的内容将被标上波浪线，并提供相应的改进提示。  </p>
+<blockquote>
+<p>tips: 按下<strong>Ctrl+Shift+X</strong>在侧边栏打开“扩展”面板，输入扩展名称即可自动搜索。  </p>
+</blockquote>
+<h3 id="Markdown-All-in-one"><a href="#Markdown-All-in-one" class="headerlink" title="Markdown All in one"></a>Markdown All in one</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ctrl&#x2F;Cmd + B</td>
+<td>切换加粗</td>
+</tr>
+<tr>
+<td>Ctrl&#x2F;Cmd + I</td>
+<td>切换斜体</td>
+</tr>
+<tr>
+<td>Alt+S (Windows)</td>
+<td>切换删除线</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + ]</td>
+<td>切换标题（上级）</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + [</td>
+<td>切换标题（下）</td>
+</tr>
+<tr>
+<td>Ctrl&#x2F;Cmd + M</td>
+<td>切换数学环境</td>
+</tr>
+<tr>
+<td>Alt + C</td>
+<td>勾选&#x2F;取消勾选任务列</td>
+</tr>
+<tr>
+<td>Ctrl&#x2F;Cmd + Shift + V</td>
+<td>切换预览</td>
+</tr>
+<tr>
+<td>Ctrl&#x2F;Cmd + K V</td>
+<td>切换侧边预览</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>计算机</category>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>vscode</tag>
       </tags>
   </entry>
 </search>
